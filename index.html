@@ -7,15 +7,16 @@
     <title>Calculator</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="calc">
         <div class="calc-screen">
-            <p>0</p>
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
         </div>
-
         <div class="buttons">
-            <div data-all-clear class="btn ac bg-grey">ac</div>
-            <div class="btn plus-minus bg-grey">+/-</div>
+            <div data-all-clear class="btn ac bg-grey">AC</div>
+            <div data-delete class="btn plus-minus bg-grey">DEL</div>
             <div class="btn percent bg-grey">%</div>
             <div data-operation class="btn division bg-orange">/</div>
             <div data-number class="btn seven">7</div>
@@ -34,9 +35,7 @@
             <div data-number class="btn dot">.</div>
             <div data-equals class="btn equal bg-orange">=</div>
         </div>
-        
-    </div>
-     
-    
+    </div>  
 </body>
+<script src="index.js"></script>
 </html>
