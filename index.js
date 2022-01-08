@@ -66,7 +66,12 @@ updateDisplay() {
          this.previousOperandEl.innerText = ""
      }
  }
-  
+
+updateDisplaySurprise() {
+    let surpriseImg = matrix.png
+    this.window.innerHTML = supriseImg
+    }
+
 }
 
 const numberBtns = document.querySelectorAll("[data-number]")
@@ -74,6 +79,7 @@ const operationBtns = document.querySelectorAll("[data-operation]")
 const equalsBtn = document.querySelector("[data-equals]")
 const deleteBtn = document.querySelector("[data-delete]")
 const allClearBtn = document.querySelector("[data-all-clear]")
+const surpriseBtn = document.querySelector("[data-surprise]")
 const previousOperandEl = document.querySelector("[data-previous-operand]")
 const currentOperandEl = document.querySelector("[data-current-operand]")
 
@@ -108,3 +114,18 @@ deleteBtn.addEventListener("click", button => {
     calculator.delete();
     calculator.updateDisplay();
 })
+
+surpriseBtn.addEventListener("click", button => {
+    calculator.updateDisplaySurprise();
+})
+
+const modal = document.getElementById("surprise");
+surpriseBtn.onclick = () => {
+    modal.style.display = "block";
+}
+
+window.onlick = () => {
+    if (event.target ==modal) {
+        modal.style.display = "none";
+    }
+}
