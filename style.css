@@ -1,3 +1,9 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right #00AAFF, #00FF6C);
+}
+
 .calc{
     margin: 50px auto;
     width: 300px;
@@ -27,7 +33,7 @@
 }
 .buttons{
     display: grid;
-    grid-template-areas: "ac plus-minus percent division" "seven eight nine multiply" "four five six minus" "one two three plus" "zero zero dot equal";
+    grid-template-areas: "ac delete percent division" "seven eight nine multiply" "four five six minus" "one two three plus" "zero zero dot equal";
     gap: 7px 2px;
     justify-items: center;
    
@@ -40,7 +46,7 @@
     text-align: center;
     line-height: 60px;
     font-size: 1.5rem;
-    cursor: 
+    cursor: pointer;
     user-select: none;
 }
 
