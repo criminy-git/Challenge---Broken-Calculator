@@ -33,7 +33,7 @@ body {
 }
 .buttons{
     display: grid;
-    grid-template-areas: "ac delete percent division" "seven eight nine multiply" "four five six minus" "one two three plus" "zero zero dot equal";
+    grid-template-areas: "ac delete surprise division" "seven eight nine multiply" "four five six minus" "one two three plus" "zero zero dot equal";
     gap: 7px 2px;
     justify-items: center;
    
@@ -67,5 +67,9 @@ body {
 }
 .btn.bg-orange{
     background: #ff9601;
+}
+
+.btn.bg-red {
+    background: #FF1700;
 }
 
