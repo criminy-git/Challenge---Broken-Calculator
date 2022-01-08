@@ -67,11 +67,6 @@ updateDisplay() {
      }
  }
 
-updateDisplaySurprise() {
-    let surpriseImg = matrix.png
-    this.window.innerHTML = supriseImg
-    }
-
 }
 
 const numberBtns = document.querySelectorAll("[data-number]")
@@ -89,7 +84,6 @@ numberBtns.forEach(button => {
     button.addEventListener("click", () => {
         calculator.appendNumber(button.innerText);
         calculator.updateDisplay()
-        // console.log(button.innerText) was just to test something
     })
 })
 
