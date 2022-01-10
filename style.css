@@ -1,12 +1,3 @@
-/* body {
-    width: 100%;
-    height: 100%;
-    border: solid red 2px;
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to right #00AAFF, #00FF6C);
-} */
-
 .calc{
     border: solid grey 3px;
     margin: 50px auto;
@@ -91,9 +82,6 @@
     left: 0;
     top: 0;
     bottom: 0;
-    height: 100%
-    background-size: cover;
-   
 }
 
 

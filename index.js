@@ -16,15 +16,15 @@ delete() {
 }
 
 appendNumber(number) {
-    if (number === "." && this.currentOperand.includes(".")) return //stop function after one .
-    this.currentOperand = this.currentOperand.toString() + number.toString() // so numbers concatenated not added
+    if (number === "." && this.currentOperand.includes(".")) return 
+    this.currentOperand = this.currentOperand.toString() + number.toString() 
 }
 
 chooseOperation(operation) {
     if (this.currenOperand === "") return
     if (this.previousOperand !== "") {
         this.compute()
-    } // operation for third number in a row
+    } 
     this.operation = operation;
     this.previousOperand = this.currentOperand;
     this.currentOperand = ""
@@ -33,8 +33,8 @@ chooseOperation(operation) {
 compute() {
     let computation
     const prev = parseFloat(this.previousOperand) 
-    const current = parseFloat(this.currentOperand) //converting strings to number
-    if (isNaN(prev) || isNaN(current)) return //if no curr or prev value stop this function
+    const current = parseFloat(this.currentOperand) 
+    if (isNaN(prev) || isNaN(current)) return 
     switch (this.operation) {
         case "+" :
                 computation = prev + current
