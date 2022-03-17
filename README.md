@@ -1,6 +1,6 @@
 Broken Calculator 
 
-[Link to finished project](https://criminy-git.github.io/broken-calculator-challenge-entry/)
+[Link to finished project](https://j-pohl.github.io/broken-calculator-challenge-entry/)
 
 This is the repository for the Broken Calculator by the team The Three Musketeers in the developer Discord community Cascaderans. 
 
