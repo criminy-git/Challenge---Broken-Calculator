@@ -1,7 +1,7 @@
 # Broken Calculator 
 ## Group Project, Challenge Entry
 
-# A calculator that has one key which has unforeseen consequences!
+## A calculator that has one key which has unforeseen consequences!
 
 [Link to finished project](https://j-pohl.github.io/broken-calculator-challenge-entry/)
 
